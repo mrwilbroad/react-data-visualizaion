@@ -1,4 +1,8 @@
-.active 
-{
+body {
+  font-family: "Klee One", cursive !important;
+  font-family: "Nunito", sans-serif !important;
+}
+
+.active {
   color: brown !important;
 }
