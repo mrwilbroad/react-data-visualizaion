@@ -2,7 +2,7 @@
   "name": "react-visulization",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mrwilbroad.github.io/react-data-visualization",
+  "homepage": "https://mrwilbroad.github.io/react-data-visualizaion/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
