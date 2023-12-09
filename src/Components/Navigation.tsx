@@ -8,6 +8,10 @@ const Navigation = () => {
       link: "/",
     },
     {
+        name: "Charts",
+        link: "/graphs/chart",
+      },
+    {
       name: "Bar Chart",
       link: "/graphs/bar-chart",
     },
