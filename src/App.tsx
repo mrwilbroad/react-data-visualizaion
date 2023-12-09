@@ -11,6 +11,8 @@ function App() {
     <React.Fragment>
       <Navigation />
       <Routes>
+
+        <Route path="/react-data-visualization" Component={HomeComponent}/>
         <Route path="/" Component={HomeComponent}/>
 
         <Route path="/graphs" Component={AGraphsVisulization}>
