@@ -1,11 +1,33 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from "react-router-dom";
+import HomeComponent from "../Pages/HomeComponent";
 
 const AGraphsVisulization = () => {
   return (
-    <div className='container mt-3 border-top'>
-          <Outlet/>
-    </div>
-  )
-}
+    <section className="container p-4 text-start mt-3 border-top">
+      <HomeComponent />
 
-export default AGraphsVisulization
+      <section>
+        Regard{" "}
+        <code>
+          <a
+            target="_blank"
+            className="text-decoration-none"
+            href="https://github.com/mrwilbroad"
+          >
+            mrwilbroad
+          </a>
+          <a
+            target="_blank"
+            className="text-decoration-none mx-3"
+            href="https://github.com/mrwilbroad/react-data-visualizaion"
+          >
+             //all source code available
+          </a>
+        
+        </code>
+      </section>
+    </section>
+  );
+};
+
+export default AGraphsVisulization;

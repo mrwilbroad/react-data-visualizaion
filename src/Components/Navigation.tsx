@@ -9,23 +9,23 @@ const Navigation = () => {
     },
     {
         name: "Charts",
-        link: "/react-data-visualizaion/graphs/chart",
+        link: "/react-data-visualizaion/chart",
       },
     {
       name: "Bar Chart",
-      link: "/react-data-visualizaion/graphs/bar-chart",
+      link: "/react-data-visualizaion/bar-chart",
     },
     {
       name: "Line Chart",
-      link: "/react-data-visualizaion/graphs/bar-chart",
+      link: "/react-data-visualizaion/bar-chart",
     },
     {
       name: "Pie",
-      link: "/react-data-visualizaion/graphs/bar-chart",
+      link: "/react-data-visualizaion/bar-chart",
     },
     {
       name: "Doughut",
-      link: "/react-data-visualizaion/graphs/bar-chart",
+      link: "/react-data-visualizaion/bar-chart",
     },
   ];
 

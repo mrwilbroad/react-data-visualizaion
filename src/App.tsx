@@ -13,12 +13,11 @@ function App() {
       <Navigation />
       <Routes>
 
-        <Route path="/" Component={HomeComponent}/>
+        <Route path="/" Component={AGraphsVisulization}/>
 
-        <Route path="/react-data-visualizaion/graphs" Component={AGraphsVisulization}>
-          <Route path="chart" Component={FirstChart}/>
-          <Route path="bar-chart" Component={BarChartGraph} />
-        </Route>
+        <Route path="/react-data-visualizaion" Component={AGraphsVisulization}/>
+        <Route path="/react-data-visualizaion/chart" Component={FirstChart}/>
+        <Route path="/react-data-visualizaion/bar-chart" Component={BarChartGraph} />
       </Routes>
     </React.Fragment>
   );
