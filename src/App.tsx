@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Navigation from "./Components/Navigation";
 import { Routes, Route } from "react-router-dom";
@@ -10,6 +9,11 @@ import LineGraph from "./Graphs/LineGraph";
 function App() {
   return (
     <section className="container">
+      <section className="my-2">
+         <p className="display-5 text-center">
+         The Evolution of Data Visualization Paradigms:
+         </p>
+      </section>
       <Navigation />
       <Routes>
         <Route path="/" Component={AGraphsVisulization} />

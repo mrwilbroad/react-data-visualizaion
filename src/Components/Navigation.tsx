@@ -30,7 +30,7 @@ const Navigation = () => {
   ];
 
   return (
-    <Nav variant="pills" className="p-3 justify-content-center gap-3">
+    <Nav variant="pills" className="p-3 justify-content-around gap-3 border  p-3">
       {graphs.map((graph, index) => (
         <Nav.Item key={index}>
           <Link className="nav-link border" to={graph.link}>

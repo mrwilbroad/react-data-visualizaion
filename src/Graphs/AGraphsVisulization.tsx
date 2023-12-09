@@ -2,7 +2,7 @@ import HomeComponent from "../Pages/HomeComponent";
 
 const AGraphsVisulization = () => {
   return (
-    <section className="container p-4 text-start mt-3 border-top">
+    <section className="text-start mt-3">
       <HomeComponent />
 
       <section>
@@ -10,7 +10,7 @@ const AGraphsVisulization = () => {
         <code>
           <a
             target="_blank"
-            rel="noreferrer" 
+            rel="noreferrer"
             className="text-decoration-none"
             href="https://github.com/mrwilbroad"
           >
@@ -18,13 +18,12 @@ const AGraphsVisulization = () => {
           </a>
           <a
             target="_blank"
-            rel="noreferrer" 
+            rel="noreferrer"
             className="text-decoration-none mx-3"
             href="https://github.com/mrwilbroad/react-data-visualizaion"
           >
-             //all source code available
+            all source code available
           </a>
-        
         </code>
       </section>
     </section>
