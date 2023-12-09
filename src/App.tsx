@@ -13,7 +13,8 @@ function App() {
       <Navigation />
       <Routes>
 
-        <Route path="/react-data-visualization" Component={HomeComponent}/>
+        <Route path="/react-data-visualizaion" Component={HomeComponent}/>
+        
         <Route path="/" Component={HomeComponent}/>
 
         <Route path="/graphs" Component={AGraphsVisulization}>
