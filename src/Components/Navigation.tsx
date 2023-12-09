@@ -5,7 +5,7 @@ const Navigation = () => {
   const graphs = [
     {
       name: "Home",
-      link: "/",
+      link: "/react-data-visualizaion",
     },
     {
         name: "Charts",
@@ -17,7 +17,7 @@ const Navigation = () => {
     },
     {
       name: "Line Chart",
-      link: "/react-data-visualizaion/bar-chart",
+      link: "/react-data-visualizaion/line-chart",
     },
     {
       name: "Pie",

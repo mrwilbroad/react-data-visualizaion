@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react";
-import type { staffstype } from "../types/staffs";
+import { YearLabel } from "../Components/common_data/YearLabel";
 
 import { Bar } from "react-chartjs-2";
 import {
@@ -15,13 +15,7 @@ import {
 } from "chart.js";
 import staffsDataset from "../Data/datasets.json";
 
-
-const staffsAvailable: staffstype[] = staffsDataset;
-const YearOfStaffs = new Set(staffsAvailable.map((e) => e.year));
-const YearLabel = [...YearOfStaffs].sort();
-
 const BarChartGraph = () => {
-  const labels = [...YearOfStaffs].sort(); //total=6;
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -33,17 +27,16 @@ const BarChartGraph = () => {
     BarElement
   );
 
-  const ageDistributionByYear : {} = useMemo(()=> {
+  const ageDistributionByYear: {} = useMemo(() => {
     let agDist = {};
     YearLabel.forEach((yr) => {
-        const staffsInYear = staffsDataset.filter((staff) => staff.year === yr);
-        agDist= staffsInYear.map((staff) => staff.age);
-      });
-      return agDist;
-  },[])
+      const staffsInYear = staffsDataset.filter((staff) => staff.year === yr);
+      agDist = staffsInYear.map((staff) => staff.age);
+    });
+    return agDist;
+  }, []);
 
-
-  useEffect(() => {}, [labels,ageDistributionByYear]);
+  useEffect(() => {}, [YearLabel, ageDistributionByYear]);
   return (
     <div>
       <h5>Bar Graph</h5>
@@ -59,15 +52,14 @@ const BarChartGraph = () => {
                 },
                 title: {
                   display: true,
-                  text: `Population of Female and Male Since ${labels[0]}`,
+                  text: `Population of Female and Male Since ${YearLabel[0]}`,
                   color: `rbg(100,100,12)`,
                 },
-                
               },
             }}
             height={"170px"}
             data={{
-              labels,
+              labels: YearLabel,
               datasets: [
                 {
                   label: "Female",
@@ -106,7 +98,7 @@ const BarChartGraph = () => {
             }}
             height={"170px"}
             data={{
-              labels,
+              labels: YearLabel,
               datasets: [
                 {
                   label: "Female",
