@@ -20,7 +20,7 @@ function App() {
 
         <Route path="/graphs" Component={AGraphsVisulization}>
           <Route path="/chart" Component={FirstChart}/>
-          <Route path="bar-chart" Component={BarChartGraph} />
+          <Route path="/bar-chart" Component={BarChartGraph} />
         </Route>
       </Routes>
     </React.Fragment>
