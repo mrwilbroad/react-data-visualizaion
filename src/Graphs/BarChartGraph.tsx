@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import type { staffstype } from "../types/staffs";
 
 import { Bar } from "react-chartjs-2";
@@ -15,7 +15,6 @@ import {
 } from "chart.js";
 import staffsDataset from "../Data/datasets.json";
 
-type labelsType = Array<number>;
 
 const staffsAvailable: staffstype[] = staffsDataset;
 const YearOfStaffs = new Set(staffsAvailable.map((e) => e.year));
@@ -34,11 +33,14 @@ const BarChartGraph = () => {
     BarElement
   );
 
-  let ageDistributionByYear = {};
-  YearLabel.forEach((yr) => {
-    const staffsInYear = staffsDataset.filter((staff) => staff.year === yr);
-    ageDistributionByYear= staffsInYear.map((staff) => staff.age);
-  });
+  const ageDistributionByYear : {} = useMemo(()=> {
+    let agDist = {};
+    YearLabel.forEach((yr) => {
+        const staffsInYear = staffsDataset.filter((staff) => staff.year === yr);
+        agDist= staffsInYear.map((staff) => staff.age);
+      });
+      return agDist;
+  },[])
 
 
   useEffect(() => {}, [labels,ageDistributionByYear]);
