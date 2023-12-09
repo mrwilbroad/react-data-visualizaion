@@ -9,7 +9,7 @@ import FirstChart from "./Components/FirstChart";
 
 function App() {
   return (
-    <React.Fragment>
+    <section className="container">
       <Navigation />
       <Routes>
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/react-data-visualizaion/chart" Component={FirstChart}/>
         <Route path="/react-data-visualizaion/bar-chart" Component={BarChartGraph} />
       </Routes>
-    </React.Fragment>
+    </section>
   );
 }
 
