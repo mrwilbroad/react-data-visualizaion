@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import HomeComponent from "../Pages/HomeComponent";
 
 const AGraphsVisulization = () => {
@@ -11,6 +10,7 @@ const AGraphsVisulization = () => {
         <code>
           <a
             target="_blank"
+            rel="noreferrer" 
             className="text-decoration-none"
             href="https://github.com/mrwilbroad"
           >
@@ -18,6 +18,7 @@ const AGraphsVisulization = () => {
           </a>
           <a
             target="_blank"
+            rel="noreferrer" 
             className="text-decoration-none mx-3"
             href="https://github.com/mrwilbroad/react-data-visualizaion"
           >

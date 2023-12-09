@@ -29,7 +29,7 @@ const LineGraph = () => {
       parseFloat(salary)
     );
     return SalaryDistr;
-  }, [staffsData]);
+  }, []);
 
   const MaleSalary: Number[] = useMemo(() => {
     let FemaleStafs = staffsData.filter((staff) => staff.gender === "male");
@@ -37,9 +37,9 @@ const LineGraph = () => {
       parseFloat(salary)
     );
     return SalaryDistr;
-  }, [staffsData]);
+  }, []);
 
-  useEffect(() => {}, [staffsData]);
+  useEffect(() => {}, []);
 
   return (
     <div>

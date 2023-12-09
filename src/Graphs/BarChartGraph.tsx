@@ -36,7 +36,7 @@ const BarChartGraph = () => {
     return agDist;
   }, []);
 
-  useEffect(() => {}, [YearLabel, ageDistributionByYear]);
+  useEffect(() => {}, [ageDistributionByYear]);
   return (
     <div>
       <h5>Bar Graph</h5>
