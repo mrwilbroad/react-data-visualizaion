@@ -5,27 +5,17 @@ const AGraphsVisulization = () => {
     <section className="text-start mt-3">
       <HomeComponent />
 
-      <section>
-        Regard{" "}
-        <code>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="text-decoration-none"
-            href="https://github.com/mrwilbroad"
-          >
-            mrwilbroad
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="text-decoration-none mx-3"
-            href="https://github.com/mrwilbroad/react-data-visualizaion"
-          >
-            all source code available
-          </a>
-        </code>
-      </section>
+      <small>
+        Regard {" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className="text-decoration-none"
+          href="https://github.com/mrwilbroad"
+        >
+          mrwilbroad{" "}{new Date().getFullYear()} 
+        </a>
+      </small>
     </section>
   );
 };

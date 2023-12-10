@@ -8,7 +8,7 @@ import LineGraph from "./Graphs/LineGraph";
 
 function App() {
   return (
-    <section className="container">
+    <section className="container mb-3 py-3">
       <section className="my-2">
          <p className="display-5 text-center">
          The Evolution of Data Visualization Paradigms:
